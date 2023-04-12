@@ -18,7 +18,9 @@ async function signin(email: string, password: string): Promise<string> {
   const passwordOk = await bcrypt.compare(password, user.password);
   if (!passwordOk) throw invalidCredentialsError();
 
-  const token = jwt.sign({ id: user.id }, process.env.SECRET, {
+  const secret = process.env.SECRET as string;
+  console.log(secret);
+  const token = jwt.sign({ id: user.id }, secret, {
     expiresIn: 86400,
   });
   return token;
