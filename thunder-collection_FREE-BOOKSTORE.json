@@ -1,0 +1,147 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "FREE-BOOKSTORE",
+    "dateExported": "2023-04-12T13:32:19.127Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7d0deec7-eb1a-470b-acd3-5afd442d2621",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "SIGNUP",
+            "url": "localhost:5000/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-27T19:22:30.550Z",
+            "modified": "2023-04-06T19:57:40.631Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Marjory\",\n  \"email\": \"ma@email.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b71c1d3d-3ade-43b1-9a0f-19dbaf2bb174",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "SIGNIN",
+            "url": "localhost:5000/users/signin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-27T19:23:54.728Z",
+            "modified": "2023-04-12T12:58:03.100Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ma@email.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "641c52a7-2027-43c6-a6d1-62bbc190ae1d",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "CREATE_BOOK",
+            "url": "localhost:5000/books",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-27T20:37:16.242Z",
+            "modified": "2023-04-12T13:10:17.898Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgwMjk2MTkwLCJleHAiOjE2ODAzODI1OTB9.WnazDPwv_pZm9tP13KE7W25uqnAkMxbBZRyaCcPpiVQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Livro Chato 3\",\n  \"author\": \"Autor Chato\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgxMzA1MDAzLCJleHAiOjE2ODEzOTE0MDN9.nL4CkgLkiZWz_jJ2Ni-5925SMyAsxQkWSZ_wvHsgvlU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d26229c-198b-466f-803f-a5e961087e17",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "GETALL_BOOKS",
+            "url": "localhost:5000/books",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-27T20:45:09.244Z",
+            "modified": "2023-04-12T13:10:31.739Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer 5bac96d8-90a1-4148-970f-0e71ad1c4439",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgxMzA1MDAzLCJleHAiOjE2ODEzOTE0MDN9.nL4CkgLkiZWz_jJ2Ni-5925SMyAsxQkWSZ_wvHsgvlU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "95b2c3c0-2d4f-4b5a-91d4-faaaab3bbe67",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "TAKE_BOOK ",
+            "url": "localhost:5000/books/take-book/1",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-27T21:33:03.761Z",
+            "modified": "2023-04-12T13:12:08.575Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer 719d3677-68b8-403d-93e3-4659fdafee3f",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgxMzA1MDAzLCJleHAiOjE2ODEzOTE0MDN9.nL4CkgLkiZWz_jJ2Ni-5925SMyAsxQkWSZ_wvHsgvlU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b24e6eb3-e8ea-4fb1-b374-17c3e7806df4",
+            "colId": "1dd373d5-b093-4eba-8abe-e30c178939a7",
+            "containerId": "",
+            "name": "GETALL_MYBOOKS",
+            "url": "localhost:5000/books/my-books",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-27T21:38:41.432Z",
+            "modified": "2023-04-12T13:17:06.367Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer 719d3677-68b8-403d-93e3-4659fdafee3f",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgxMzA1MDAzLCJleHAiOjE2ODEzOTE0MDN9.nL4CkgLkiZWz_jJ2Ni-5925SMyAsxQkWSZ_wvHsgvlU"
+            },
+            "tests": []
+        }
+    ]
+}
