@@ -21,7 +21,22 @@ async function findById(id: number): Promise<QueryResult<UserCreate>> {
   );
 }
 
+async function findByEmail(email: string) {
+  return await connectionDb.query("SELECT * FROM users WHERE email=$1", [
+    email,
+  ]);
+}
+
+async function createSession(token: string, userId: number) {
+  await connectionDb.query(
+    `INSERT INTO sessions (token, "userId") VALUES ($1, $2)`,
+    [token, userId]
+  );
+}
+
 export default {
   create,
   findById,
+  findByEmail,
+  createSession,
 };
