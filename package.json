@@ -27,10 +27,12 @@
     "@types/http-status": "^1.1.2",
     "@types/jsonwebtoken": "^9.0.1",
     "@types/pg": "^8.6.6",
+    "prisma": "^4.12.0",
     "tsx": "^3.12.6",
     "typescript": "^5.0.3"
   },
   "dependencies": {
+    "@prisma/client": "^4.12.0",
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
